@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Tool</title>
+    <link rel="stylesheet" href="css/bootstrap4.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min_lib.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body class="bg-light pb-5">
+
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg  bg-white">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-10">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link link-active" href="tool_store.html">Tool Store</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="bell"><i class="font25 text-my-dark far fa-bell mr-4"></i><span class="spot"> </span></div>
+                    <img class="navbar_image_tool pointer " src="images/user_image.png" alt="">
+                    <!-- mini-profile -->
+                    <div class="mini-profile">
+                        <div class="mini-profile-header d-flex p-3 bg-light">
+                            <div class="user-img">
+                                <img class="mini-profile-image" src="images/user_image.png" alt="">
+                            </div>
+                            <div class="user-desc ml-3">
+                                <p class="text-my-dark">
+                                    <span class="text-darks font25">Scarlet Miles</span><br> ScarletMiles@onetool.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mini-profile-body p-4 bg-white">
+                            <a href="" class="text-my-dark"><i class="far fa-user mr-2"></i> My Profile</a> <br>
+                            <a href="" class="text-my-dark "><i class="far fa-credit-card mr-2 pt-3" style="width: 15px;"></i> Billing Information</a>
+                        </div>
+                        <div class="mini-profile-footer p-4 bg-white">
+                            <button class=" btn btn-lg btn-block logout-btn">Logout</button>
+                        </div>
+                    </div>
+                    <!-- /.mini-profile -->
+
+
+                </form>
+            </div>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <hr class="hr">
+            <!-- explore -->
+            <h6 class="text-my-dark side-sep-heading  pt-3">Explore</h6>
+            <hr class="hr">
+            <ul class="nav flex-column pl-4">
+                <li class="nav-item ">
+                    <a class="nav-link side-item-active" href="tool_store.html">Top Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item" href="new_arrival.html">New Arrival</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item" href="#">Top Sale Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item" href="#">Products For Startups</a>
+                </li>
+
+            </ul>
+            <!-- /.explore -->
+
+            <!-- Category -->
+            <h6 class="text-my-dark side-sep-heading  pt-5">Category</h6>
+            <hr class="hr">
+            <ul class="nav flex-column pl-4">
+                <li class="nav-item">
+                    <a class="nav-link side-item" href="#">Meeting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item" href="#">Marketing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item" href="#">Accounting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item" href="#">CRM</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link side-item" href="#">Notes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item" href="#">File Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item" href="#">Knowledge Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item" href="#">Remote</a>
+                </li>
+
+            </ul>
+            <!-- /.Category -->
+
+
+        </div>
+        <!-- /.sidebar -->
+
+    </header>
+
+    <!-- /.panel -->
+    <div class="panel-2">
+        <div class="container-fluid">
+
+            <!-- Top-Products -->
+            <section class="top-products mt-6">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bg-white mb-5 p-3 ">
+                                <h6 class="text-my-dark">Search By App Name, Keyword Or Category</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h6 class="text-my-dark mb-m10">Top Products</h6>
+                    <!-- row -->
+                    <div class="row">
+                        <!-- col -->
+                        <a href="tool.html" class="col-xl-4 col-lg-6 ">
+
+                            <div class="dash-card-lg bg-white  mt-4">
+                                <!-- card-fl-1 -->
+                                <div class="card-fl-1 pt-5 pl-5 pr-5 pb-2">
+                                    <img src="images/tool/outplay.png" alt="">
+                                    <h6 class="text-my-dark  pl-1 mt-4">GoHire Can Automate Boring Tasks, Publish Your Jobs To Multiple Job Boards</h6>
+                                </div>
+                                <!-- /.card-fl-1 -->
+
+                                <hr class="hr">
+
+                                <!-- card-fl-2 -->
+                                <div class="card-fl-2 pl-5 pr-5">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-5">
+                                            <p class="text-my-dark mb-0 pl-1">Replaces <br> <span class="text-blue">BreezeHr</span></p>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-7">
+                                            <p class="text-my-dark mb-0 pl-1">Category <br> <span class="text-blue">HR & Recruting</span></p>
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+
+                                </div>
+                                <!-- /.card-fl-2 -->
+
+                                <hr class="hr">
+                                <!-- card-fl-3 -->
+                                <div class="card-fl-3 pt-3 pl-5 pr-5 pb-4">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-6">
+                                            <p class="text-my-dark pl-1">Starting At <br>
+                                                <strong><span class="text-blue font40">$30</span></strong> <br>
+                                                <span class="text-danger">14 days free trial</span>
+                                            </p>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-6 text-right">
+                                            <p class="text-my-dark pl-1"> <br>
+                                                <del><span class="text-my-dark font40">$30</span></del> <br>
+                                                <span class="text-my-dark">Original Price</span>
+                                            </p>
+
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+
+                                </div>
+                                <!-- /.card-fl-3 -->
+
+
+
+                            </div>
+                        </a>
+                        <!-- /.col -->
+
+                        <!-- col -->
+                        <div class="col-xl-4 col-lg-6">
+
+                            <div class="dash-card-lg bg-white  mt-4">
+                                <!-- card-fl-1 -->
+                                <div class="card-fl-1 pt-5 pl-5 pr-5 pb-2">
+                                    <img src="images/tool/image 25.png" alt="">
+                                    <h6 class="text-my-dark  pl-1 mt-4">Bookafy Automate Your Busines With Customizable Appointment Booking</h6>
+                                </div>
+                                <!-- /.card-fl-1 -->
+
+                                <hr class="hr">
+
+                                <!-- card-fl-2 -->
+                                <div class="card-fl-2 pl-5 pr-5">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-5">
+                                            <p class="text-my-dark mb-0 pl-1">Replaces <br> <span class="text-blue">Celendy</span></p>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-7">
+                                            <p class="text-my-dark mb-0 pl-1">Category <br> <span class="text-blue">Scheduling & Booking</span></p>
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+
+                                </div>
+                                <!-- /.card-fl-2 -->
+
+                                <hr class="hr">
+                                <!-- card-fl-3 -->
+                                <div class="card-fl-3 pt-3 pl-5 pr-5 pb-4">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-6">
+                                            <p class="text-my-dark pl-1">Starting At <br>
+                                                <strong><span class="text-blue font40">$5</span></strong> <br>
+                                                <span class="text-danger">14 days free trial</span>
+                                            </p>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-6 text-right">
+                                            <p class="text-my-dark pl-1"> <br>
+                                                <del><span class="text-my-dark font40">$8</span></del> <br>
+                                                <span class="text-my-dark">Original Price</span>
+                                            </p>
+
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+
+                                </div>
+                                <!-- /.card-fl-3 -->
+
+
+
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <!-- col -->
+                        <div class="col-xl-4 col-lg-6">
+
+                            <div class="dash-card-lg bg-white  mt-4">
+                                <!-- card-fl-1 -->
+                                <div class="card-fl-1 pt-5 pl-5 pr-5 pb-2">
+                                    <img src="images/tool/digisigner.png" alt="">
+                                    <h6 class="text-my-dark  pl-1 mt-4">Upwave Is A Productivity That Performs Helps Businesss Thrive Organize,Plan</h6>
+                                </div>
+                                <!-- /.card-fl-1 -->
+
+                                <hr class="hr">
+
+                                <!-- card-fl-2 -->
+                                <div class="card-fl-2 pl-5 pr-5">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-5">
+                                            <p class="text-my-dark mb-0 pl-1">Replaces <br> <span class="text-blue">Trello</span></p>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-7">
+                                            <p class="text-my-dark mb-0 pl-1">Category <br> <span class="text-blue">Task Management</span></p>
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+
+                                </div>
+                                <!-- /.card-fl-2 -->
+
+                                <hr class="hr">
+                                <!-- card-fl-3 -->
+                                <div class="card-fl-3 pt-3 pl-5 pr-5 pb-4">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-6">
+                                            <p class="text-my-dark pl-1">Starting At <br>
+                                                <strong><span class="text-blue font40">$3</span></strong> <br>
+                                                <span class="text-danger">14 days free trial</span>
+                                            </p>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-6 text-right">
+                                            <p class="text-my-dark pl-1"> <br>
+                                                <del><span class="text-my-dark font40">$5</span></del> <br>
+                                                <span class="text-my-dark">Original Price</span>
+                                            </p>
+
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+
+                                </div>
+                                <!-- /.card-fl-3 -->
+
+
+
+                            </div>
+                        </div>
+                        <!-- /.col -->
+
+                        <!-- col -->
+                        <div class="col-xl-4 col-lg-6">
+
+                            <div class="dash-card-lg bg-white  mt-4">
+                                <!-- card-fl-1 -->
+                                <div class="card-fl-1 pt-5 pl-5 pr-5 pb-2">
+                                    <img src="images/tool/taiga.png" alt="">
+                                    <h6 class="text-my-dark  pl-1 mt-4">Social Bees's All In One Social Management ToolsHelp You With Publish</h6>
+                                </div>
+                                <!-- /.card-fl-1 -->
+
+                                <hr class="hr">
+
+                                <!-- card-fl-2 -->
+                                <div class="card-fl-2 pl-5 pr-5">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-5">
+                                            <p class="text-my-dark mb-0 pl-1">Replaces <br> <span class="text-blue">Buffer</span></p>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-7">
+                                            <p class="text-my-dark mb-0 pl-1">Category <br> <span class="text-blue">Social Media</span></p>
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+
+                                </div>
+                                <!-- /.card-fl-2 -->
+
+                                <hr class="hr">
+                                <!-- card-fl-3 -->
+                                <div class="card-fl-3 pt-3 pl-5 pr-5 pb-4">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-6">
+                                            <p class="text-my-dark pl-1">Starting At <br>
+                                                <strong><span class="text-blue font40">$9</span></strong> <br>
+                                                <span class="text-danger">14 days free trial</span>
+                                            </p>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-6 text-right">
+                                            <p class="text-my-dark pl-1"> <br>
+                                                <del><span class="text-my-dark font40">$14</span></del> <br>
+                                                <span class="text-my-dark">Original Price</span>
+                                            </p>
+
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+
+                                </div>
+                                <!-- /.card-fl-3 -->
+
+
+
+                            </div>
+                        </div>
+                        <!-- /.col -->
+
+                        <!-- col -->
+                        <div class="col-xl-4 col-lg-6">
+
+                            <div class="dash-card-lg bg-white  mt-4">
+                                <!-- card-fl-1 -->
+                                <div class="card-fl-1 pt-5 pl-5 pr-5 pb-2">
+                                    <img src="images/tool/taskeo.png" alt="">
+                                    <h6 class="text-my-dark  pl-1 mt-4">Social Bees's All In One Social Management ToolsHelp You With Publish</h6>
+                                </div>
+                                <!-- /.card-fl-1 -->
+
+                                <hr class="hr">
+
+                                <!-- card-fl-2 -->
+                                <div class="card-fl-2 pl-5 pr-5">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-5">
+                                            <p class="text-my-dark mb-0 pl-1">Replaces <br> <span class="text-blue">Buffer</span></p>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-7">
+                                            <p class="text-my-dark mb-0 pl-1">Category <br> <span class="text-blue">Social Media</span></p>
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+
+                                </div>
+                                <!-- /.card-fl-2 -->
+
+                                <hr class="hr">
+                                <!-- card-fl-3 -->
+                                <div class="card-fl-3 pt-3 pl-5 pr-5 pb-4">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-6">
+                                            <p class="text-my-dark pl-1">Starting At <br>
+                                                <strong><span class="text-blue font40">$9</span></strong> <br>
+                                                <span class="text-danger">14 days free trial</span>
+                                            </p>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-6 text-right">
+                                            <p class="text-my-dark pl-1"> <br>
+                                                <del><span class="text-my-dark font40">$14</span></del> <br>
+                                                <span class="text-my-dark">Original Price</span>
+                                            </p>
+
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+
+                                </div>
+                                <!-- /.card-fl-3 -->
+
+
+
+                            </div>
+                        </div>
+                        <!-- /.col -->
+
+                        <!-- col -->
+                        <div class="col-xl-4 col-lg-6">
+
+                            <div class="dash-card-lg bg-white  mt-4">
+                                <!-- card-fl-1 -->
+                                <div class="card-fl-1 pt-5 pl-5 pr-5 pb-2">
+                                    <img src="images/tool/vectera.png" alt="">
+                                    <h6 class="text-my-dark  pl-1 mt-4">Social Bees's All In One Social Management ToolsHelp You With Publish</h6>
+                                </div>
+                                <!-- /.card-fl-1 -->
+
+                                <hr class="hr">
+
+                                <!-- card-fl-2 -->
+                                <div class="card-fl-2 pl-5 pr-5">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-5">
+                                            <p class="text-my-dark mb-0 pl-1">Replaces <br> <span class="text-blue">Buffer</span></p>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-7">
+                                            <p class="text-my-dark mb-0 pl-1">Category <br> <span class="text-blue">Social Media</span></p>
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+
+                                </div>
+                                <!-- /.card-fl-2 -->
+
+                                <hr class="hr">
+                                <!-- card-fl-3 -->
+                                <div class="card-fl-3 pt-3 pl-5 pr-5 pb-4">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-6">
+                                            <p class="text-my-dark pl-1">Starting At <br>
+                                                <strong><span class="text-blue font40">$9</span></strong> <br>
+                                                <span class="text-danger">14 days free trial</span>
+                                            </p>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-6 text-right">
+                                            <p class="text-my-dark pl-1"> <br>
+                                                <del><span class="text-my-dark font40">$14</span></del> <br>
+                                                <span class="text-my-dark">Original Price</span>
+                                            </p>
+
+                                        </div>
+                                        <!-- /.col -->
+                                    </div>
+                                    <!-- /.row -->
+
+                                </div>
+                                <!-- /.card-fl-3 -->
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </section>
+            <!-- /.top-products -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.panel -->
+</body>
+
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap4.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

@@ -1,0 +1,306 @@
+.navbar_image {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.navbar_image_tool {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.navbar_image_tool:hover~.mini-profile {
+    display: block;
+}
+
+.mini-profile:hover {
+    display: block;
+}
+
+.nav-link {
+    color: #afafaf;
+    transition: 0.5 ease-in-out;
+    /* line-height: ; */
+}
+
+.link-active {
+    color: #32aabc;
+    border-bottom: 3px solid #32aabc;
+}
+
+.hr {
+    border: 1px solid #f4f4f4;
+}
+
+.panel {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.panel-2 {
+    padding: 0px 90px 0px 390px;
+    /* z-index: -1; */
+}
+
+.navbar {
+    z-index: 1000;
+}
+
+.container-2 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.tool-container {
+    border-top: 1px solid #f4f4f4;
+}
+
+.shadow {
+    box-shadow: 3px 3px 12px silver;
+}
+
+.tool-nav {
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.border {
+    border: 1px solid #f4f4f4;
+}
+
+.pricing-card-des {
+    margin-top: 180px;
+}
+
+.top-products a:hover {
+    color: white;
+}
+
+.nav-link {
+    margin-bottom: -17px;
+    padding-bottom: 20px;
+}
+
+.spot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #E56128!important;
+    position: absolute;
+    left: 10px;
+}
+
+.bell {
+    position: relative;
+}
+
+.menu-icon {
+    width: 50px!important;
+}
+
+
+/***************** tool-menu **************/
+
+.tool-menu {
+    width: 200px;
+    position: absolute;
+    color: #009AAF;
+    right: 0;
+    top: 20px;
+    z-index: 1;
+    text-align: left;
+    box-shadow: 2px 2px 12px silver;
+    display: none;
+}
+
+
+/***************** tool-menu **************/
+
+
+/******************** mini-profile ******************/
+
+.mini-profile {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    box-shadow: 3px 3px 12px silver;
+    width: 370px;
+    border-radius: 20px;
+    position: fixed;
+    display: none;
+    transition: 0.5s ease-in-out!important;
+}
+
+.mini-profile-image {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.logout-btn {
+    background: #E56128;
+    border-radius: 3px;
+    color: white;
+}
+
+.show {
+    display: block;
+}
+
+
+/******************** mini-profile ******************/
+
+
+/************ order-summary ************/
+
+.order-summary-container {
+    width: 100%;
+    height: 100vh;
+    background: rgb(7, 7, 7, 0.5);
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    position: fixed!important;
+    display: none;
+}
+
+.order_summary {
+    width: 700px;
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    padding: 50px;
+}
+
+.order_summary_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.order-user {
+    padding: 5px;
+    color: #32aabc;
+    border: 2px solid #32aabc;
+    border-radius: 5px;
+}
+
+.order_summary_btn {
+    color: #32aabc;
+    border: 2px solid #32aabc;
+    /* padding: 5px 10px!important; */
+    width: 40px;
+    background: transparent;
+    /* width: 10px; */
+}
+
+.order_summary_input {
+    width: 60px;
+    border: 2px solid #32aabc;
+    text-align: center;
+}
+
+.minus {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.plus {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+
+/************ order-summary ************/
+
+
+/************* sidebar *************/
+
+.sidebar {
+    background: white;
+    width: 280px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding-top: 55px;
+    border-top: 1px solid #f4f4f4;
+    position: fixed;
+    z-index: 1;
+}
+
+.side-item {
+    border-left: 2px solid #f4f4f4;
+}
+
+.side-item-active {
+    border-left: 2px solid #32aabc;
+    color: #32aabc!important;
+}
+
+.side-sep-heading {
+    padding-left: 45px;
+}
+
+
+/************* sidebar *************/
+
+
+/* *******************main-card***************** */
+
+.add-tool {
+    transition: 0.5s ease-in-out!important;
+    height: 150px;
+}
+
+.add-tool:hover {
+    background: #009AAF!important;
+    color: white!important;
+}
+
+.dash-card {
+    height: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dash-card::after {
+    content: "Go To Tool";
+    position: absolute;
+    bottom: -10px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    background: #009AAF!important;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+    opacity: 0;
+    font-weight: bold;
+}
+
+.dash-card:hover.dash-card::after {
+    opacity: 1;
+}
+
+.dash-card h6 {
+    margin-top: 10px;
+}
+
+.dash-card-lg {
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.dash-card-lg:hover {
+    box-shadow: 3px 3px 12px rgb(226, 225, 225);
+}
+
+
+/* *******************main-card***************** */
