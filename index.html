@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/min_lib.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-light pb-5">
@@ -16,20 +17,20 @@
     <header>
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg  bg-white">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="" class="mr-10">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-toggle-on"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto ml-10">
                     <li class="nav-item ">
-                        <a class="nav-link link-active" href="index.html">Dashboard</a>
+                        <a class="nav-link link-active font16" href="index.html">Dashboard</a>
                     </li>
                     <li class="nav-item ml-5">
-                        <a class="nav-link" href="tool_store.html">Tool Store</a>
+                        <a class="nav-link font16" href="tool_store.html">Tool Store</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -41,21 +42,22 @@
                     <!-- mini-profile -->
                     <div class="mini-profile">
                         <div class="mini-profile-header d-flex p-3 bg-light">
+                            <button type="button" class  = "btn bg-transparent text-my-dark profile-close-btn">x</button>
                             <div class="user-img">
                                 <img class="mini-profile-image" src="images/user_image.png" alt="">
                             </div>
                             <div class="user-desc ml-3">
                                 <p class="text-my-dark">
-                                    <span class="text-darks font25">Scarlet Miles</span><br> ScarletMiles@onetool.com
+                                    <span class="text-darks font16">Scarlet Miles</span><br> ScarletMiles@onetool.com
                                 </p>
                             </div>
                         </div>
-                        <div class="mini-profile-body p-4 bg-white">
+                        <div class="mini-profile-body pl-4 pt-2 pb-2 pr-4 bg-white">
                             <a href="" class="text-my-dark"><i class="far fa-user mr-2"></i> My Profile</a> <br>
                             <a href="" class="text-my-dark "><i class="far fa-credit-card mr-2 pt-3" style="width: 15px;"></i> Billing Information</a>
                         </div>
                         <div class="mini-profile-footer p-4 bg-white">
-                            <button class=" btn btn-lg btn-block logout-btn">Logout</button>
+                            <button class=" btn btn-lg btn-block logout-btn font16 text-white">Logout</button>
                         </div>
                     </div>
                     <!-- /.mini-profile -->
@@ -70,17 +72,19 @@
         <!-- my-tools -->
         <section class="my-tools mt-6">
             <div class="container-fluid">
-                <h6 class="text-my-dark mb-m10">My Tools</h6>
+                <p class="text-my-dark mb-m10 font16">My Tools</p>
                 <!-- row -->
                 <div class="row">
                     <!-- col -->
                     <div class="col-xl-3 col-lg-4  col-md-6">
+                        <a href = "tool_store.html">
                         <div class=" pointer add-tool text-blue bg-white p-4 d-flex justify-content-center align-items-center mt-4">
                             <div class="wrap text-center">
                                 <i class="fas fa-plus-circle font25"></i>
                                 <h5 class="">Add New Tools</h5>
                             </div>
                         </div>
+                        </a>
                     </div>
                     <!-- /.col -->
 
@@ -89,7 +93,7 @@
                         <div class="dash-card pointer bg-white   d-flex justify-content-center align-items-center mt-4">
                             <div class="wrap text-center w-100p">
                                 <img src="images/dashboard/gohire.png" alt="">
-                                <h6 class="text-my-dark">Plan:Ultimate</h6>
+                                <h6 class="text-my-dark ">Plan:Ultimate</h6>
                             </div>
                         </div>
                     </div>
@@ -100,7 +104,7 @@
                         <div class="dash-card bg-white   d-flex justify-content-center align-items-center mt-4">
                             <div class="wrap text-center w-100p">
                                 <img src="images/dashboard/kasm.png" alt="">
-                                <h6 class="text-my-dark">Plan:Ultimate</h6>
+                                <h6 class="text-my-dark ">Plan:Ultimate</h6>
                             </div>
                         </div>
                     </div>
@@ -124,6 +128,7 @@
                             <div class="wrap text-center w-100p">
                                 <img src="images/dashboard/nifty.png" alt="">
                                 <h6 class="text-my-dark">Plan:Ultimate</h6>
+                                <p class="badg-text">12 days trail left</p>
                             </div>
                         </div>
                     </div>
@@ -176,10 +181,10 @@
                 <!-- row -->
                 <div class="row mb-m15">
                     <div class="col-sm-6">
-                        <h6 class="text-my-dark  ">New Arrivals</h6>
+                        <p class="text-my-dark font16 ">New Arrivals</p>
                     </div>
                     <div class="col-sm-6 text-right">
-                        <h6 class="text-my-dark  pointer all-tools-menu">All Tools</h6>
+                        <p class="text-my-dark  font16  pointer all-tools-menu">All Tools <i class="ml-2 fas fa-angle-down"></i></p>
                         <div class="tool-menu p-2 bg-white">
                             <div class="too-item">
                                 <button class="btn bg-transparent text-blue"> <i class="fas fa-check mr-2 "></i> All Tools</button>
@@ -225,26 +230,26 @@
 
                             <div class="dash-card-lg bg-white  mt-4">
                                 <!-- card-fl-1 -->
-                                <div class="card-fl-1 pt-5 pl-5 pr-5 pb-2">
+                                <div class="card-fl-1 pt-4 pl-4 pr-4 pb-2">
                                     <img src="images/dashboard/image 20.png" alt="">
-                                    <h6 class="text-my-dark  pl-1 mt-4">GoHire Can Automate Boring Tasks, Publish Your Jobs To Multiple Job Boards</h6>
+                                    <h6 class="text-my-dark  pl-1 mt-4 font14">GoHire Can Automate Boring Tasks, Publish Your Jobs To Multiple Job Boards</h6>
                                 </div>
                                 <!-- /.card-fl-1 -->
 
                                 <hr class="hr">
 
                                 <!-- card-fl-2 -->
-                                <div class="card-fl-2 pl-5 pr-5">
+                                <div class="card-fl-2 pl-4 pr-4">
                                     <!-- row -->
                                     <div class="row">
                                         <!-- col -->
                                         <div class="col-sm-5">
-                                            <p class="text-my-dark mb-0 pl-1">Replaces <br> <span class="text-blue">BreezeHr</span></p>
+                                            <p class="text-my-dark mb-0 pl-1 font12">Replaces <br> <span class="text-blue">BreezeHr</span></p>
                                         </div>
                                         <!-- /.col -->
                                         <!-- col -->
                                         <div class="col-sm-7">
-                                            <p class="text-my-dark mb-0 pl-1">Category <br> <span class="text-blue">HR & Recruting</span></p>
+                                            <p class="text-my-dark mb-0 pl-1 font12">Category <br> <span class="text-blue">HR & Recruting</span></p>
                                         </div>
                                         <!-- /.col -->
                                     </div>
@@ -255,21 +260,21 @@
 
                                 <hr class="hr">
                                 <!-- card-fl-3 -->
-                                <div class="card-fl-3 pt-3 pl-5 pr-5 pb-4">
+                                <div class="card-fl-3 pt-3 pl-4 pr-4 pb-4">
                                     <!-- row -->
                                     <div class="row">
                                         <!-- col -->
                                         <div class="col-sm-6">
-                                            <p class="text-my-dark pl-1">Starting At <br>
-                                                <strong><span class="text-blue font40">$30</span></strong> <br>
+                                            <p class="text-my-dark pl-1 font12">Starting At <br>
+                                                <span class="text-blue font40">$30</span> <br>
                                                 <span class="text-danger">14 days free trial</span>
                                             </p>
                                         </div>
                                         <!-- /.col -->
                                         <!-- col -->
                                         <div class="col-sm-6 text-right">
-                                            <p class="text-my-dark pl-1"> <br>
-                                                <del><span class="text-my-dark font40">$30</span></del> <br>
+                                            <p class="text-my-dark pl-1 font12"> <br>  <br>
+                                                <del><span class="text-my-dark font41">$30</span></del> <br>
                                                 <span class="text-my-dark">Original Price</span>
                                             </p>
 
@@ -292,26 +297,26 @@
 
                             <div class="dash-card-lg bg-white  mt-4">
                                 <!-- card-fl-1 -->
-                                <div class="card-fl-1 pt-5 pl-5 pr-5 pb-2">
+                                <div class="card-fl-1 pt-4 pl-4 pr-4 pb-2">
                                     <img src="images/dashboard/bookafy.png" alt="">
-                                    <h6 class="text-my-dark  pl-1 mt-4">Bookafy Automate Your Busines With Customizable Appointment Booking</h6>
+                                    <h6 class="text-my-dark  pl-1 mt-4 font14">Bookafy Automate Your Busines With Customizable Appointment Booking</h6>
                                 </div>
                                 <!-- /.card-fl-1 -->
 
                                 <hr class="hr">
 
                                 <!-- card-fl-2 -->
-                                <div class="card-fl-2 pl-5 pr-5">
+                                <div class="card-fl-2 pl-4 pr-4">
                                     <!-- row -->
                                     <div class="row">
                                         <!-- col -->
                                         <div class="col-sm-5">
-                                            <p class="text-my-dark mb-0 pl-1">Replaces <br> <span class="text-blue">Celendy</span></p>
+                                            <p class="text-my-dark mb-0 pl-1 font12">Replaces <br> <span class="text-blue">Celendy</span></p>
                                         </div>
                                         <!-- /.col -->
                                         <!-- col -->
                                         <div class="col-sm-7">
-                                            <p class="text-my-dark mb-0 pl-1">Category <br> <span class="text-blue">Scheduling & Booking</span></p>
+                                            <p class="text-my-dark mb-0 pl-1 font12">Category <br> <span class="text-blue">Scheduling & Booking</span></p>
                                         </div>
                                         <!-- /.col -->
                                     </div>
@@ -322,21 +327,21 @@
 
                                 <hr class="hr">
                                 <!-- card-fl-3 -->
-                                <div class="card-fl-3 pt-3 pl-5 pr-5 pb-4">
+                                <div class="card-fl-3 pt-3 pl-4 pr-4 pb-4">
                                     <!-- row -->
                                     <div class="row">
                                         <!-- col -->
                                         <div class="col-sm-6">
-                                            <p class="text-my-dark pl-1">Starting At <br>
-                                                <strong><span class="text-blue font40">$5</span></strong> <br>
+                                            <p class="text-my-dark pl-1 font12">Starting At <br>
+                                                <span class="text-blue font40">$5</span> <br>
                                                 <span class="text-danger">14 days free trial</span>
                                             </p>
                                         </div>
                                         <!-- /.col -->
                                         <!-- col -->
                                         <div class="col-sm-6 text-right">
-                                            <p class="text-my-dark pl-1"> <br>
-                                                <del><span class="text-my-dark font40">$8</span></del> <br>
+                                            <p class="text-my-dark pl-1 font12"> <br>  <br>
+                                                <del><span class="text-my-dark font41">$8</span></del> <br>
                                                 <span class="text-my-dark">Original Price</span>
                                             </p>
 
@@ -353,31 +358,32 @@
                             </div>
                         </div>
                         <!-- /.col -->
+      
                         <!-- col -->
                         <div class="col-xl-3 col-lg-4  col-md-6">
 
                             <div class="dash-card-lg bg-white  mt-4">
                                 <!-- card-fl-1 -->
-                                <div class="card-fl-1 pt-5 pl-5 pr-5 pb-2">
+                                <div class="card-fl-1 pt-4 pl-4 pr-4 pb-2">
                                     <img src="images/dashboard/image 22.png" alt="">
-                                    <h6 class="text-my-dark  pl-1 mt-4">Upwave Is A Productivity That Performs Helps Businesss Thrive Organize,Plan</h6>
+                                    <h6 class="text-my-dark  pl-1 mt-4 font14">Bookafy Automate Your Busines With Customizable Appointment Booking</h6>
                                 </div>
                                 <!-- /.card-fl-1 -->
 
                                 <hr class="hr">
 
                                 <!-- card-fl-2 -->
-                                <div class="card-fl-2 pl-5 pr-5">
+                                <div class="card-fl-2 pl-4 pr-4">
                                     <!-- row -->
                                     <div class="row">
                                         <!-- col -->
                                         <div class="col-sm-5">
-                                            <p class="text-my-dark mb-0 pl-1">Replaces <br> <span class="text-blue">Trello</span></p>
+                                            <p class="text-my-dark mb-0 pl-1 font12">Replaces <br> <span class="text-blue">Celendy</span></p>
                                         </div>
                                         <!-- /.col -->
                                         <!-- col -->
                                         <div class="col-sm-7">
-                                            <p class="text-my-dark mb-0 pl-1">Category <br> <span class="text-blue">Task Management</span></p>
+                                            <p class="text-my-dark mb-0 pl-1 font12">Category <br> <span class="text-blue">Scheduling & Booking</span></p>
                                         </div>
                                         <!-- /.col -->
                                     </div>
@@ -388,21 +394,21 @@
 
                                 <hr class="hr">
                                 <!-- card-fl-3 -->
-                                <div class="card-fl-3 pt-3 pl-5 pr-5 pb-4">
+                                <div class="card-fl-3 pt-3 pl-4 pr-4 pb-4">
                                     <!-- row -->
                                     <div class="row">
                                         <!-- col -->
                                         <div class="col-sm-6">
-                                            <p class="text-my-dark pl-1">Starting At <br>
-                                                <strong><span class="text-blue font40">$3</span></strong> <br>
+                                            <p class="text-my-dark pl-1 font12">Starting At <br>
+                                                <span class="text-blue font40">$5</span> <br>
                                                 <span class="text-danger">14 days free trial</span>
                                             </p>
                                         </div>
                                         <!-- /.col -->
                                         <!-- col -->
                                         <div class="col-sm-6 text-right">
-                                            <p class="text-my-dark pl-1"> <br>
-                                                <del><span class="text-my-dark font40">$5</span></del> <br>
+                                            <p class="text-my-dark pl-1 font12"> <br>  <br>
+                                                <del><span class="text-my-dark font30">$8</span></del> <br>
                                                 <span class="text-my-dark">Original Price</span>
                                             </p>
 
@@ -420,31 +426,32 @@
                         </div>
                         <!-- /.col -->
 
+
                         <!-- col -->
                         <div class="col-xl-3 col-lg-4  col-md-6">
 
                             <div class="dash-card-lg bg-white  mt-4">
                                 <!-- card-fl-1 -->
-                                <div class="card-fl-1 pt-5 pl-5 pr-5 pb-2">
+                                <div class="card-fl-1 pt-4 pl-4 pr-4 pb-2">
                                     <img src="images/dashboard/image 23.png" alt="">
-                                    <h6 class="text-my-dark  pl-1 mt-4">Social Bees's All In One Social Management ToolsHelp You With Publish</h6>
+                                    <h6 class="text-my-dark  pl-1 mt-4 font14">Bookafy Automate Your Busines With Customizable Appointment Booking</h6>
                                 </div>
                                 <!-- /.card-fl-1 -->
 
                                 <hr class="hr">
 
                                 <!-- card-fl-2 -->
-                                <div class="card-fl-2 pl-5 pr-5">
+                                <div class="card-fl-2 pl-4 pr-4">
                                     <!-- row -->
                                     <div class="row">
                                         <!-- col -->
                                         <div class="col-sm-5">
-                                            <p class="text-my-dark mb-0 pl-1">Replaces <br> <span class="text-blue">Buffer</span></p>
+                                            <p class="text-my-dark mb-0 pl-1 font12">Replaces <br> <span class="text-blue">Celendy</span></p>
                                         </div>
                                         <!-- /.col -->
                                         <!-- col -->
                                         <div class="col-sm-7">
-                                            <p class="text-my-dark mb-0 pl-1">Category <br> <span class="text-blue">Social Media</span></p>
+                                            <p class="text-my-dark mb-0 pl-1 font12">Category <br> <span class="text-blue">Scheduling & Booking</span></p>
                                         </div>
                                         <!-- /.col -->
                                     </div>
@@ -455,21 +462,21 @@
 
                                 <hr class="hr">
                                 <!-- card-fl-3 -->
-                                <div class="card-fl-3 pt-3 pl-5 pr-5 pb-4">
+                                <div class="card-fl-3 pt-3 pl-4 pr-4 pb-4">
                                     <!-- row -->
                                     <div class="row">
                                         <!-- col -->
                                         <div class="col-sm-6">
-                                            <p class="text-my-dark pl-1">Starting At <br>
-                                                <strong><span class="text-blue font40">$9</span></strong> <br>
+                                            <p class="text-my-dark pl-1 font12">Starting At <br>
+                                                <span class="text-blue font40">$5</span> <br>
                                                 <span class="text-danger">14 days free trial</span>
                                             </p>
                                         </div>
                                         <!-- /.col -->
                                         <!-- col -->
                                         <div class="col-sm-6 text-right">
-                                            <p class="text-my-dark pl-1"> <br>
-                                                <del><span class="text-my-dark font40">$14</span></del> <br>
+                                            <p class="text-my-dark pl-1 font12"> <br>  <br>
+                                                <del><span class="text-my-dark font41">$8</span></del> <br>
                                                 <span class="text-my-dark">Original Price</span>
                                             </p>
 
