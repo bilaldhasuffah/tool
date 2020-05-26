@@ -128,6 +128,12 @@ padding-right :14%;
 .pricing table{
     width:100%;
 }
+
+
+
+.compare_table_mobile{
+    display:none;
+}
 /***************** tool-menu **************/
 
 .tool-menu {
@@ -368,6 +374,14 @@ padding-right :14%;
     opacity: 0;
     font-weight: bold;
 }
+.compare_table_mobile tr {
+    width: 100%;
+}
+
+.compare_table_mobile td {
+    width: 100%;
+}
+
 
 .dash-card:hover.dash-card::after {
     opacity: 1;
@@ -440,6 +454,17 @@ width:100%;
     .media-flex-ul{
         display:block!important;
     }    
+    
+    .compare_table_mobile{
+    display:block;
+    width: 100%;
+    }
+    
+    .compare_table{
+        display:none;
+    }
+
+
 
 }
 
