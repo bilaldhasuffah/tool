@@ -731,7 +731,8 @@ pre code {
 .col-xxl-7,
 .col-xxl-8,
 .col-xxl-9,
-.col-xxl-auto{
+.col-xxl-auto,
+.col-xxl-odd{
     position: relative;
     width: 100%;
     min-height: 1px;
@@ -1868,6 +1869,14 @@ pre code {
         flex: 0 0 100%;
         max-width: 100%
     }
+
+    .col-xxl-odd {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%
+    }
+
     .order-xxl-first {
         -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
