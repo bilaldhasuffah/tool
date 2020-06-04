@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Tool</title>
+    <link rel="stylesheet" href="css/bootstrap4.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min_lib.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-light pb-5">
+
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg  bg-white">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+            <button class = "btn bg-transparent mr-auto" id = "side-menu-btn"><i class="fas fa-toggle-off"></i></button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+             
+
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-10">
+                    <li class="nav-item active">
+                        <a class="nav-link font16" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link font16" href="tool_store.html">Tool Store</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link link-active font16" href="overview.html">Manage Team</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="bell"><i class="font25 text-my-dark far fa-bell mr-4"></i><span class="spot"> </span></div>
+                    <img class="navbar_image_tool pointer " src="images/user_image.png" alt="">
+                    <!-- mini-profile -->
+                    <div class="mini-profile">
+                        <div class="mini-profile-header d-flex p-3 bg-light">
+                            <button type="button" class  = "btn bg-transparent text-my-dark profile-close-btn">x</button>
+                            <div class="user-img">
+                                <img class="mini-profile-image" src="images/user_image.png" alt="">
+                            </div>
+                            <div class="user-desc ml-3">
+                                <p class="text-my-dark">
+                                    <span class="text-darks font16">Scarlet Miles</span><br> ScarletMiles@onetool.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mini-profile-body pl-4 pt-2 pb-2 pr-4 bg-white">
+                            <a href="" class="text-my-dark"><i class="far fa-user mr-2"></i> My Profile</a> <br>
+                            <a href="" class="text-my-dark "><i class="far fa-credit-card mr-2 pt-3" style="width: 15px;"></i> Billing Information</a>
+                        </div>
+                        <div class="mini-profile-footer p-4 bg-white">
+                            <button class=" btn btn-lg btn-block logout-btn font16 text-white">Logout</button>
+                        </div>
+                    </div>
+                    <!-- /.mini-profile -->
+
+
+                </form>
+            </div>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <hr class="hr">
+            <!-- explore -->
+            <h6 class="text-my-dark side-sep-heading font14  pt-3">Dashboard</h6>
+            <hr class="hr">
+            <ul class="nav flex-column pl-4">
+                <li class="nav-item ">
+                    <a class="nav-link side-item-active lh-2" href="overview.html">overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item lh-2" href="team_request.html">Team Request</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item lh-2" href="#">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item lh-2" href="department.html">Departments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item lh-2" href="#">Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item lh-2" href="#">Payments</a>
+                </li>
+
+            </ul>
+            <!-- /.explore -->
+
+
+
+        </div>
+        <!-- /.sidebar -->
+
+    </header>
+
+    <!-- /.panel -->
+    <div class="panel-3">
+        <div class="container-fluid">
+
+            <!-- Top-Products -->
+            <section class="overview-initial mt-1">
+                <!-- row -->
+                <div class="row">
+
+                    <!-- col -->
+                    <div class="col-xxl-odd col-xl-3 col-lg-4 col-md-6">
+                       <div class="dash-card-2 pointer bg-white mt-4 pl-3 pr-3">
+                        <div class = "row h-150">
+                            <div class = "col-sm-8 col-8 d-flex align-items-center">
+                             <div class="wrap text-left">
+                                <h6 class = "font40 text-blue">100</h6>
+                                <h6 class="text-my-dark font12">Active Users</h6>
+                            </div>
+                           </div>
+                            <div class = "col-sm-4 col-4 d-flex align-items-center">
+                             <div class="wrap text-right w-100p">
+                                <img src = "images/Group 132.png" class = "image-fluid">
+                            </div>
+                           </div>
+
+                        </div>
+                            
+                        </div>
+                    </div>
+                    <!-- /.col -->
+
+                    <!-- col -->
+                    <div class="col-xxl-odd col-xl-3 col-lg-4 col-md-6">
+                       <div class="dash-card-2 pointer bg-white mt-4 pl-3 pr-3">
+                        <div class = "row h-150">
+                            <div class = "col-sm-8 col-8 d-flex align-items-center">
+                             <div class="wrap text-left">
+                                <h6 class = "font40 text-d-blue">5</h6>
+                                <h6 class="text-my-dark font12">Departments</h6>
+                            </div>
+                           </div>
+                            <div class = "col-sm-4 col-4 d-flex align-items-center">
+                             <div class="wrap text-right w-100p">
+                                <img src = "images/Group 131.png">
+                            </div>
+                           </div>
+
+                        </div>
+                            
+                        </div>
+                    </div>
+                    <!-- /.col -->
+
+                    <!-- col -->
+                    <div class="col-xxl-odd col-xl-3 col-lg-4 col-md-6">
+                       <div class="dash-card-2 pointer bg-white mt-4 pl-3 pr-3">
+                        <div class = "row h-150">
+                            <div class = "col-sm-8 col-8 d-flex align-items-center">
+                             <div class="wrap text-left">
+                                <h6 class = "font40 text-orange">15</h6>
+                                <h6 class="text-my-dark font12">Subscribed Tools</h6>
+                            </div>
+                           </div>
+                            <div class = "col-sm-4 col-4 d-flex align-items-center">
+                             <div class="wrap text-right w-100p">
+                                <img src = "images/Group 133.png">
+                            </div>
+                           </div>
+
+                        </div>
+                            
+                        </div>
+                    </div>
+                    <!-- /.col -->
+
+                    <!-- col -->
+                    <div class="col-xxl-odd col-xl-3 col-lg-4 col-md-6">
+                       <div class="dash-card-2 pointer bg-white mt-4 pl-3 pr-3">
+                        <div class = "row h-150">
+                            <div class = "col-sm-8 col-8 d-flex align-items-center">
+                             <div class="wrap text-left">
+                                <h6 class = "font12 text-orange2">$300 savings</h6>
+                                <h6 class = "font40 text-d-blue2">$1500</h6>
+                                <h6 class="text-my-dark font12">Total Cost Per Month</h6>
+                            </div>
+                           </div>
+                            <div class = "col-sm-4 col-4 d-flex align-items-center">
+                             <div class="wrap text-right w-100p">
+                                <img src = "images/Group 134.png">
+                            </div>
+                           </div>
+
+                        </div>
+                            
+                        </div>
+                    </div>
+                    <!-- /.col -->
+
+                </div>
+                <!-- /.row -->
+                
+                
+            </section>
+            <!-- /.top-products -->
+
+            <!--overview-most-used-->
+            <section class = "mt-5 overview-most-used">
+                <!--/.row-->
+                <div class = "row">
+                    <!--col-->
+                    <div class = "col-lg-5">
+                        <h6 class = "font16">Most Used Tools</h6>
+                        <div class = "card h-300px">
+                        
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/outplay.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">20 users </h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/upwave.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">15 users </h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/bookafy.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">20 users </h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/vectera.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">20 users </h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/taskeo.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">20 users </h6></div>
+                              </div>
+                          </li>
+
+                        </ul>     
+                        </div>
+                    </div>
+                    <!--/.col-->
+                    
+
+                    <!--col-->
+                    <div class = "col-lg-7">
+                        <h6 class = "font16">Purchases</h6>
+                        <div class = "card h-300px p-2">
+                        <canvas id="myChart" class = " p-4"  ></canvas>    
+                        </div>
+                        
+                    </div>
+                    <!--/.col-->
+
+                </div>
+                <!--/.row-->
+            </section>
+            <!--/.overview-most-used-->            
+
+
+            <!--Member-request--> 
+            <section class = "mt-5 member-request">
+                <!--/.row-->
+                <div class = "row">
+                    <!--col-->
+                    <div class = "col-12 mt-2">
+                        <h6 class = "font16">Member Request</h6>
+                        
+                        <div class="card pb-0 border-none">
+                          <!--card-header-->
+                          <div class="card-header bg-white pt-4 pb-4">
+                              <div class = "row">
+                                  <div class = "col-lg-4 d-flex align-items-center">
+                                      <img src = "images/tool/outplay.png">
+                                  </div>
+                                  <div class = "col-lg-4 d-flex align-items-center justify-content-center">
+                                      <h6 class = "black2c font12 mb-0">New User Request:3 &nbsp;&nbsp;&nbsp;&nbsp; Total Cost:$135</h6>
+                                  </div>
+                                  <div class = "col-lg-4 text-right">
+                                  </div>
+
+                              </div>
+                          </div>
+                          <!--/.card-header-->
+                          <!--card-body-->
+                          <div class="card-body p-0 card-body-member">
+                              <table class = "table font12 border-none">
+                                  <thead class = "bg-light black54 ">
+                                      <tr>
+                                          <td class = "text-center">NO</td>
+                                          <td>Name</td>
+                                          <td>Requested By</td>
+                                          <td>Department</td>
+                                          <td>Plan Name</td>
+                                          <td>Plan Type</td>
+                                          <td>Cost</td>
+                                          <td>Date Of Request</td>
+                                          <td ></td>
+                                      </tr>
+                                  </thead>
+                                  <tbody class = "black2c">
+                                      <tr>
+                                          <td class = "text-center">1</td>
+                                          <td>
+                                              <img src="images/user_image.png" class = "table-user-img">
+                                              &nbsp;&nbsp;
+                                              <span>Diane Web</span>
+                                          </td>
+                                          <td>Scarlet Miles</td>
+                                          <td>Accounting</td>
+                                          <td>Starter</td>
+                                          <td>Monthly</td>
+                                          <td>45$</td>
+                                          <td>22/05/2020</td>
+                                          <td>
+                                              <div class = "request-btns text-center">
+                                                  <img class = "mr-3  pointer deny1" data-toggle="modal" data-target=".bd-example-modal-lg" src = "images/deny1.png">
+                                                  <img class = "pointer approve1" src = "images/approve1.png" data-toggle="modal" data-target="#exampleModalCenter">
+                                              </div>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td class = "text-center">2</td>
+                                          <td>
+                                              <img src="images/user_image.png" class = "table-user-img">
+                                              &nbsp;&nbsp;
+                                              <span>Kathryn Wilson</span>
+                                          </td>
+                                          <td>Scarlet Miles</td>
+                                          <td>Accounting</td>
+                                          <td>Starter</td>
+                                          <td>Monthly</td>
+                                          <td>45$</td>
+                                          <td>22/05/2020</td>
+                                          <td>
+                                              <div class = "request-btns text-center">
+                                                  <img class = "mr-3  pointer deny1" data-toggle="modal" data-target=".bd-example-modal-lg" src = "images/deny1.png">
+                                                  <img class = "pointer approve1" src = "images/approve1.png" data-toggle="modal" data-target="#exampleModalCenter">
+                                              </div>
+                                          </td>
+
+                                      </tr>
+                                      <tr>
+                                          <td class = "text-center">3</td>
+                                          <td>
+                                              <img src="images/user_image.png" class = "table-user-img">
+                                              &nbsp;&nbsp;
+                                              <span>Angel Nguyen</span>
+                                          </td>
+                                          <td>Scarlet Miles</td>
+                                          <td>Accounting</td>
+                                          <td>Starter</td>
+                                          <td>Monthly</td>
+                                          <td>45$</td>
+                                          <td>22/05/2020</td>
+                                          <td>
+                                              <div class = "request-btns text-center">
+                                                  <img class = "mr-3  pointer deny1" data-toggle="modal" data-target=".bd-example-modal-lg" src = "images/deny1.png">
+                                                  <img class = "pointer approve1" src = "images/approve1.png" data-toggle="modal" data-target="#exampleModalCenter">
+                                              </div>
+                                          </td>
+
+                                      </tr>
+                                      
+                                  </tbody>
+                              </table>
+                          </div>
+                          <!--/.card-body-->
+                        </div>                            
+                    </div>
+                    <!--/.col-->
+
+                    <!--col-->
+                    <div class = "col-12 mt-5">
+                        
+                        <div class="card pb-0 border-none">
+                          <!--card-header-->
+                          <div class="card-header bg-white pt-4 pb-4">
+                              <div class = "row">
+                                  <div class = "col-lg-4 d-flex align-items-center">
+                                      <img src = "images/tool/bookafy.png">
+                                  </div>
+                                  <div class = "col-lg-4 d-flex align-items-center justify-content-center">
+                                      <h6 class = "black2c font12 mb-0">New User Request:3 &nbsp;&nbsp;&nbsp;&nbsp; Total Cost:$135</h6>
+                                  </div>
+                                  <div class = "col-lg-4 text-right">
+                                  </div>
+
+                              </div>
+                          </div>
+                          <!--/.card-header-->
+                          <!--card-body-->
+                          <div class="card-body p-0 card-body-member">
+                              <table class = "table font12 border-none">
+                                  <thead class = "bg-light black54 ">
+                                      <tr>
+                                          <td class = "text-center">NO</td>
+                                          <td>Name</td>
+                                          <td>Requested By</td>
+                                          <td>Department</td>
+                                          <td>Plan Name</td>
+                                          <td>Plan Type</td>
+                                          <td>Cost</td>
+                                          <td>Date Of Request</td>
+                                          <td ></td>
+                                      </tr>
+                                  </thead>
+                                  <tbody class = "black2c">
+                                      <tr>
+                                          <td class = "text-center">1</td>
+                                          <td>
+                                              <img src="images/user_image.png" class = "table-user-img">
+                                              &nbsp;&nbsp;
+                                              <span>Diane Web</span>
+                                          </td>
+                                          <td>Scarlet Miles</td>
+                                          <td>Accounting</td>
+                                          <td>Starter</td>
+                                          <td>Monthly</td>
+                                          <td>45$</td>
+                                          <td>22/05/2020</td>
+                                          <td>
+                                              <div class = "request-btns text-center">
+                                                  <img class = "mr-3  pointer deny1" data-toggle="modal" data-target=".bd-example-modal-lg" src = "images/deny1.png">
+                                                  <img class = "pointer approve1" src = "images/approve1.png" data-toggle="modal" data-target="#exampleModalCenter">
+                                              </div>
+                                          </td>
+
+                                      </tr>
+                                      <tr>
+                                          <td class = "text-center">2</td>
+                                          <td>
+                                              <img src="images/user_image.png" class = "table-user-img">
+                                              &nbsp;&nbsp;
+                                              <span>Kathryn Wilson</span>
+                                          </td>
+                                          <td>Scarlet Miles</td>
+                                          <td>Accounting</td>
+                                          <td>Starter</td>
+                                          <td>Monthly</td>
+                                          <td>45$</td>
+                                          <td>22/05/2020</td>
+                                          <td>
+                                              <div class = "request-btns text-center">
+                                                  <img class = "mr-3  pointer deny1" data-toggle="modal" data-target=".bd-example-modal-lg" src = "images/deny1.png">
+                                                  <img class = "pointer approve1" src = "images/approve1.png" data-toggle="modal" data-target="#exampleModalCenter">
+                                              </div>
+                                          </td>
+
+                                      </tr>
+                                      <tr>
+                                          <td class = "text-center">3</td>
+                                          <td>
+                                              <img src="images/user_image.png" class = "table-user-img">
+                                              &nbsp;&nbsp;
+                                              <span>Angel Nguyen</span>
+                                          </td>
+                                          <td>Scarlet Miles</td>
+                                          <td>Accounting</td>
+                                          <td>Starter</td>
+                                          <td>Monthly</td>
+                                          <td>45$</td>
+                                          <td>22/05/2020</td>
+                                          <td>
+                                              <div class = "request-btns text-center">
+                                                  <img class = "mr-3  pointer deny1" data-toggle="modal" data-target=".bd-example-modal-lg" src = "images/deny1.png">
+                                                  <img class = "pointer approve1" src = "images/approve1.png" data-toggle="modal" data-target="#exampleModalCenter">
+                                              </div>
+                                          </td>
+
+                                      </tr>
+                                      
+                                  </tbody>
+                              </table>
+                          </div>
+                          <!--/.card-body-->
+                        </div>                            
+                    </div>
+                    <!--/.col-->
+
+                </div>
+                <!--/.row-->
+            </section>
+            <!--/.Member-request-->            
+
+
+
+
+
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.panel -->
+    
+    <!--decline-modal-->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content p-5 mt-m30px">
+        <div class = "text-center">    
+          <img class = "h-271px w-271px" src = "images/Bankruptcy-pana1.png">
+          <h6 class = "mt-4 font16">Are You Sure Want To decline All The Request</h6>
+          <button class = "btn btn-info btn-block font16 text-white mt-3 p-2">No! Don't Decline All</button>
+          <button class = "font16 text-orange mt-3 pointer btn bg-transparent modal-decline p-0" data-dismiss="modal" aria-label="Close">Yes decline All </button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!--/.decline-modal-->
+
+    <!--approve-modal-->
+ <div class="modal fade bg-transparent-i" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered bg-transparent" role="document">
+    <div class="modal-content bg-transparent border-none">
+      <div class="modal-body d-flex justify-content-center align-items-center">
+        <img class = "" src = "images/approve_success.png">
+      </div>
+    </div>
+  </div>
+</div>
+ 
+    <!--/.decline-modal-->
+
+
+
+</body>
+
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap4.js"></script>
+<script src="js/popper.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="js/custom.js"></script>
+<!--<script src="js/chart.js"></script>-->
+</html>

@@ -20,7 +20,20 @@ body{
 .mini-profile:hover {
     display: block;
 }
+#myChart{
+    max-height:300px!important;
+}
+.btn-wrap-request{
+    visibility:hidden;
+}
 
+.card-header:hover .btn-wrap-request{
+    visibility:visible!important;
+}
+
+.table{
+    margin-bottom:0!important;
+}
 .nav-link {
     color: #afafaf;
     transition: 0.5 ease-in-out;
@@ -45,6 +58,12 @@ body{
 
 .panel-2 {
     padding: 0px 50px 0px 350px;
+    margin-top:130px;
+    /* z-index: -1; */
+}
+
+.panel-3 {
+    padding: 0px 5px 0px 305px;
     margin-top:130px;
     /* z-index: -1; */
 }
@@ -121,18 +140,38 @@ padding-right :14%;
     
 }
 
+.table-user-img{
+    height:20px;
+    width:20px;
+    border-radius:50%;
+}
+
 .pricing{
     /*overflow-x:scroll;*/
 }
 
+.card-body-member{
+    overflow-x:scroll!important;
+}
 .pricing table{
     width:100%;
 }
 
-
+.modal-decline{
+    border-bottom:2px solid #EC7532;
+}
 
 .compare_table_mobile{
     display:none;
+}
+
+
+.request-btns{
+    visibility:hidden;
+}
+
+table.table tr:hover .request-btns{
+       visibility:visible;
 }
 /***************** tool-menu **************/
 
@@ -187,6 +226,10 @@ padding-right :14%;
     display: block;
 }
 
+.show2 {
+    display: block;
+}
+
 .profile-close-btn{
     position:absolute;
     right:0;
@@ -221,6 +264,38 @@ padding-right :14%;
     position: fixed!important;
     display: none;
 }
+.side-tool-wrap2{
+    display:none;
+    overflow-x:scroll;
+}
+.side-tool-wrap{
+    overflow-x:scroll;
+}
+
+
+.order-summary-container5 {
+    width: 100%;
+    height: 100vh;
+    background: rgb(7, 7, 7, 0.5);
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    position: fixed!important;
+    display: none;
+}
+
+.order-summary-container6 {
+    width: 100%;
+    height: 100vh;
+    background: rgb(7, 7, 7, 0.5);
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    position: fixed!important;
+    display: none;
+}
 
 
 .order_summary {
@@ -233,6 +308,7 @@ padding-right :14%;
     background: white;
     position: fixed;
     padding: 50px;
+    overflow-y:scroll!important;
 }
 
 .order_summary2 {
@@ -245,8 +321,11 @@ padding-right :14%;
     background: white;
     position: fixed;
     padding: 50px;
+    overflow-y:scroll!important;
 }
-
+.side-tool-wrap{
+    position:relative;
+}
 
 .order_summary_close {
     position: absolute;
@@ -258,6 +337,42 @@ padding-right :14%;
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+.order_summary_close3 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.order_summary_close4 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.order_summary_close5 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.order_summary_close6 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+.tmanage-search-wrap{
+    position:relative;
+}
+
+.search-icon{
+    position:absolute;
+    left:15px;
+    top:8px;
+    color:#8A8A8A;
 }
 
 
@@ -300,6 +415,15 @@ padding-right :14%;
     padding:10px;
     border:none;
     width:100%;
+}
+.manage-search{
+    background:transparent;
+    height:27px;
+    width:146px;
+    border-radius:60px;
+    border: 1px solid #C8C8C8;
+    padding-left: 34px!important;
+    color:#8A8A8A;
 }
 
 
@@ -356,6 +480,27 @@ padding-right :14%;
     position: relative;
     cursor: pointer;
 }
+.dash-card-2 {
+    height: 150px;
+    position: relative;
+    cursor: pointer;
+    transition:0.5s!important;
+}
+
+.dash-card-3 {
+    height: 350px;
+    position: relative;
+    cursor: pointer;
+    overflow-y:scroll;
+    transition:0.5s!important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+
 .dash-card h6{
     font-size:14px;
 }
@@ -402,6 +547,15 @@ padding-right :14%;
     box-shadow: 3px 3px 12px rgb(226, 225, 225);
 }
 
+.dash-card-2:hover {
+    box-shadow: 3px 3px 12px rgb(226, 225, 225);
+}
+
+.dash-card-3:hover {
+    box-shadow: 3px 3px 12px rgb(226, 225, 225);
+}
+
+
 a{
     text-decoration:none;
 }
@@ -422,6 +576,82 @@ width:100%;
 }
 /********************navbar***********************/
 
+
+/********************custom Checkbox***********************/
+/* Customize the label (the container) */
+.container-4 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-4 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius:50%;
+  background-color: white;
+  border :1px solid #545454;
+}
+
+/* On mouse-over, add a grey background color */
+.container-4:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-4 input:checked ~ .checkmark {
+  background-color: #009AAF;
+  border:none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-4 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-4 .checkmark:after {
+  left: 8px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/********************custom Checkbox***********************/
+
+
  /*******************media*******************/
 @media(max-width:900px){
     .sidebar{
@@ -430,6 +660,11 @@ width:100%;
     .panel-2{
      padding: 0px 10px 0px 10px;   
     }
+    .panel-3{
+     padding: 0px 10px 0px 10px;   
+    }
+    
+    
     .show{
         display:block;
     }
@@ -479,8 +714,25 @@ width:100%;
     .dash-card-lg{
         height:400px;
     }
+
+    .dash-card-2 img{
+        height:60px!important;
+        width:60px!important;
+    }
     
 }
+
+
+@media(max-width:1100px){
+
+    .dash-card-2 img{
+        height:45px!important;
+        width:45px!important;
+    }
+    
+}
+
+
 
 @media(max-width:1040px){
 
@@ -495,6 +747,11 @@ width:100%;
     .dash-card-lg{
         height:400px;
     }
+    .dash-card-2 img{
+        height:60px!important;
+        width:60px!important;
+    }
+
     
 }
 
@@ -503,6 +760,18 @@ width:100%;
 
     .dash-card-lg{
         height:520px;
+    }
+    
+    .subs-img{
+        width:100%;
+    }
+}
+
+@media(max-width:1400px){
+
+    .dash-card-2 img{
+        height:45px;
+        width:45px;
     }
     
 }

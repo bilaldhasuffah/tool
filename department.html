@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Tool</title>
+    <link rel="stylesheet" href="css/bootstrap4.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min_lib.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-light pb-5">
+
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg  bg-white">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+            <button class = "btn bg-transparent mr-auto" id = "side-menu-btn"><i class="fas fa-toggle-off"></i></button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+             
+
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-10">
+                    <li class="nav-item active">
+                        <a class="nav-link font16" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link font16" href="tool_store.html">Tool Store</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link link-active font16" href="tool_store.html">Manage Team</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="bell"><i class="font25 text-my-dark far fa-bell mr-4"></i><span class="spot"> </span></div>
+                    <img class="navbar_image_tool pointer " src="images/user_image.png" alt="">
+                    <!-- mini-profile -->
+                    <div class="mini-profile">
+                        <div class="mini-profile-header d-flex p-3 bg-light">
+                            <button type="button" class  = "btn bg-transparent text-my-dark profile-close-btn">x</button>
+                            <div class="user-img">
+                                <img class="mini-profile-image" src="images/user_image.png" alt="">
+                            </div>
+                            <div class="user-desc ml-3">
+                                <p class="text-my-dark">
+                                    <span class="text-darks font16">Scarlet Miles</span><br> ScarletMiles@onetool.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mini-profile-body pl-4 pt-2 pb-2 pr-4 bg-white">
+                            <a href="" class="text-my-dark"><i class="far fa-user mr-2"></i> My Profile</a> <br>
+                            <a href="" class="text-my-dark "><i class="far fa-credit-card mr-2 pt-3" style="width: 15px;"></i> Billing Information</a>
+                        </div>
+                        <div class="mini-profile-footer p-4 bg-white">
+                            <button class=" btn btn-lg btn-block logout-btn font16 text-white">Logout</button>
+                        </div>
+                    </div>
+                    <!-- /.mini-profile -->
+
+
+                </form>
+            </div>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <hr class="hr">
+            <!-- explore -->
+            <h6 class="text-my-dark side-sep-heading font14  pt-3">Dashboard</h6>
+            <hr class="hr">
+            <ul class="nav flex-column pl-4">
+                <li class="nav-item ">
+                    <a class="nav-link  lh-2" href="overview.html">overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item  lh-2" href="team_request.html">Team Request</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item lh-2" href="#">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item side-item-active lh-2" href="department.html">Departments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item lh-2" href="#">Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link side-item lh-2" href="#">Payments</a>
+                </li>
+
+            </ul>
+            <!-- /.explore -->
+
+
+
+        </div>
+        <!-- /.sidebar -->
+
+    </header>
+
+    <!-- /.panel -->
+    <div class="panel-3">
+        <div class="container-fluid">
+
+         
+         
+            <!--Member-request--> 
+            <section class = " member-request">
+                <!--/.row-->
+                <div class = "row">
+                    <div class = "col-sm-6 mt-2">
+                        <h6 class = "font16">Departments</h6>
+                    </div>
+                    <div class = "col-sm-6 mt-2 d-flex align-items-center justify-content-end">
+                     <div class = "tmanage-search-wrap">
+                       <i class="fas fa-search font12 search-icon"></i> 
+                       <input type = "text" class = "manage-search font12 " placeholder="Search">
+                     </div>
+                    </div>
+                </div>
+                <!--/.row-->
+                
+                <div class = "row">
+                    <div class = "col-xl-4 col-lg-6 col-md-12 col-xxl-3">
+                        <a>
+                        <div class=" pointer dash-card-3 order_summary_open3 add-tool text-blue bg-white p-4 d-flex justify-content-center align-items-center mt-4">
+                            <div class="wrap text-center">
+                                <i class="fas fa-plus-circle font25"></i>
+                                <h5 class="font16b">Create New Department</h5>
+                            </div>
+                        </div>
+                        </a>                        
+                    </div>
+
+
+                    <!--col-->
+                    <div class = "col-xl-4 col-lg-6 col-md-12 col-xxl-3">
+                        <div class = "dash-card-3 card mt-4 border-none">
+                                                  <!--card-header-->
+                          <div class="card-header bg-white pt-4 pb-4">
+                              <div class = "row">
+                                  <div class = "col-lg-6">
+                                     <h6 class = "mb-0 font16b black2c">Marketing</h6>
+                                     <h6 class = "mb-0 font12 black54">10 Tools . 10 Users</h6>
+                                  </div>
+                                  <div class = "col-lg-6 text-right">
+                                      <button class = "text-blue font12 mb-0 btn bg-transparent order_summary_open5">Manage</button>
+                                  </div>
+
+                              </div>
+                          </div>
+                          <!--/.card-header-->
+
+                        
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/outplay.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">20 users </h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/upwave.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">15 users </h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/bookafy.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">20 users </h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/vectera.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">20 users </h6></div>
+                              </div>
+                          </li>
+
+                        </ul>     
+                        </div>
+                    </div>
+                    <!--/.col-->
+                    <!--col-->
+                    <div class = "col-xl-4 col-lg-6 col-md-12 col-xxl-3">
+                        <div class = "dash-card-3 card mt-4 border-none">
+                                                  <!--card-header-->
+                          <div class="card-header bg-white pt-4 pb-4">
+                              <div class = "row">
+                                  <div class = "col-lg-6">
+                                     <h6 class = "mb-0 font16b black2c">Human Resources</h6>
+                                     <h6 class = "mb-0 font12 black54">4 Tools . 10 Users</h6>
+                                  </div>
+                                  <div class = "col-lg-6 text-right">
+                                      <button class = "text-blue font12 mb-0 btn bg-transparent order_summary_open5">Manage</button>
+                                  </div>
+
+                              </div>
+                          </div>
+                          <!--/.card-header-->
+
+                        
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/outplay.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">Lead Generation</h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/upwave.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">survey</h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/bookafy.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">Remote </h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/vectera.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">Marketing </h6></div>
+                              </div>
+                          </li>
+
+                        </ul>     
+                        </div>
+                    </div>
+                    <!--/.col-->
+                    <!--col-->
+                    <div class = "col-xl-4 col-lg-6 col-md-12 col-xxl-3">
+                        <div class = "dash-card-3 card mt-4 border-none">
+                                                  <!--card-header-->
+                          <div class="card-header bg-white pt-4 pb-4">
+                              <div class = "row">
+                                  <div class = "col-lg-6">
+                                     <h6 class = "mb-0 font16b black2c">Sales</h6>
+                                     <h6 class = "mb-0 font12 black54">3 Tools . 10 Users</h6>
+                                  </div>
+                                  <div class = "col-lg-6 text-right">
+                                      <button class = "text-blue font12 mb-0 btn bg-transparent order_summary_open5">Manage</button>
+                                  </div>
+
+                              </div>
+                          </div>
+                          <!--/.card-header-->
+
+                        
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/outplay.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">survey </h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/upwave.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">Lead Generarion </h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/bookafy.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">Remote</h6></div>
+                              </div>
+                          </li>
+
+                        </ul>     
+                        </div>
+                    </div>
+                    <!--/.col-->
+                    <!--col-->
+                    <div class = "col-xl-4 col-lg-6 col-md-12 col-xxl-3">
+                        <div class = "dash-card-3 card mt-4 border-none">
+                                                  <!--card-header-->
+                          <div class="card-header bg-white pt-4 pb-4">
+                              <div class = "row">
+                                  <div class = "col-lg-6">
+                                     <h6 class = "mb-0 font16b black2c">Admin</h6>
+                                     <h6 class = "mb-0 font12 black54">10 Tools . 10 Users</h6>
+                                  </div>
+                                  <div class = "col-lg-6 text-right">
+                                      <button class = "text-blue font12 mb-0 btn bg-transparent order_summary_open5">Manage</button>
+                                  </div>
+
+                              </div>
+                          </div>
+                          <!--/.card-header-->
+
+                        
+                         <ul class="list-group list-group-flush">
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/outplay.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">Lead Generation</h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/upwave.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">survey</h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/bookafy.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">Remote </h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/vectera.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">Marketing </h6></div>
+                              </div>
+                          </li>
+
+                        </ul>     
+                    </div>
+                    </div>
+                    <!--/.col-->
+                    <!--col-->
+                    <div class = "col-xl-4 col-lg-6 col-md-12 col-xxl-3">
+                        <div class = "dash-card-3 card mt-4 border-none">
+                                                  <!--card-header-->
+                          <div class="card-header bg-white pt-4 pb-4">
+                              <div class = "row">
+                                  <div class = "col-lg-6">
+                                     <h6 class = "mb-0 font16b black2c">Research</h6>
+                                     <h6 class = "mb-0 font12 black54">10 Tools . 10 Users</h6>
+                                  </div>
+                                  <div class = "col-lg-6 text-right">
+                                      <button class = "text-blue font12 mb-0 btn bg-transparent order_summary_open5">Manage</button>
+                                  </div>
+
+                              </div>
+                          </div>
+                          <!--/.card-header-->
+
+                        
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/outplay.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">Lead Generation</h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/upwave.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">survey</h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/bookafy.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">Remote </h6></div>
+                              </div>
+                          </li>
+                          <li class="list-group-item p-3">
+                              <div class = "row">
+                                  <div class = "col-6"><img src = "images/tool/vectera.png"></div>
+                                  <div class = "col-6 d-flex align-items-center justify-content-end"><h6 class = "black2c font12 mb-0">Marketing </h6></div>
+                              </div>
+                          </li>
+
+                        </ul>     
+                        </div>
+                    </div>
+                    <!--/.col-->
+
+
+
+                </div>
+            </section>
+            <!--/.Member-request-->            
+          </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.panel -->
+    
+        <div class="order-summary-container">
+        <!-- order_summary -->
+        <div class="order_summary ">
+             <button class="btn bg-transparent text-my-dark order_summary_close3">x</button> 
+            <h5 class="black54">Basic Detail</h5>
+            <table class="table table-bordered text-my-dark ">
+                <tr class = "font12 black54">
+                    <td>Department Name</td>
+                    <td><strong>Human Resources</strong></td>
+                </tr>
+         
+    
+                <tr>
+                    <td class = "font12 black54">Select User</td>
+                    <td class = "font16b">
+                        <span class="order-user">alex@onetool.com</span>
+                        <button class="btn bg-transparent text-blue">+ Add User</button>
+                    </td>
+                </tr>
+
+            </table>
+
+        
+            <div class = "side-tool-wrap mt-5">
+            <div class = "row">
+                <div class = "col-6"><h5 class="black54">Add New Tools</h5></div>
+                <div class = "col-6 text-right">
+                        <h6 class="  font16  pointer all-tools-menu">All Tools <i class="ml-2 fas fa-angle-down"></i></h6>
+                        <div class="tool-menu p-2 bg-white">
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class="fas fa-check mr-2 "></i> All Tools</button>
+                            </div>
+
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class=" mr-4 "></i> Meeting</button>
+                            </div>
+
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class="mr-4"></i> Marketing</button>
+                            </div>
+
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class="mr-4"></i> Accounting</button>
+                            </div>
+
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class=" mr-4 "></i> CRM</button>
+                            </div>
+
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class=" mr-4 "></i> Notes</button>
+                            </div>
+
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class=" mr-4 "></i> File Management</button>
+                            </div>
+
+                        </div>
+
+                </div>
+            </div>
+            
+            <table class="table table-bordered text-my-dark ">
+                <tr class = "">
+                    <td class = " border-b">
+                        <span class = "">
+                        <label class="container-4">
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>                        
+                        </span>
+                        <img src = "images/tool/upwave.png" class = "ml-5 mt-m14px">
+                    </td>
+                    <td class = "">
+                        <span class = "">
+                        <label class="container-4">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                        
+                        </span>
+
+                        <img src = "images/tool/bookafy.png" class = "ml-5 mt-m14px">
+                    </td>
+                </tr>
+                <tr class = "">
+                    <td class = "">
+                        <span class = "">
+                        <label class="container-4">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                        
+                        </span>
+
+                        <img src = "images/tool/outplay.png" class = "ml-5 mt-m14px">
+                    </td>
+                    <td class = "border-b">
+                        <span class = "">
+                        <label class="container-4">
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>                        
+                        </span>
+
+                        <img src = "images/tool/image 25.png" class = "ml-5 mt-m14px">
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+            <button class="btn btn-info btn-block mt-10 order_summary_open4">Create New Department</button>
+        </div>
+        <!-- /.order_summary -->
+    </div>
+    <!-- /.order_summary-container -->
+
+
+
+    <div class="order-summary-container2 order_summary_close4">
+        <!-- order_summary -->
+        <div class="order_summary2 text-center">
+             <button class="btn bg-transparent text-my-dark order_summary_close4">x</button> 
+        
+            <div class = "subscription_image">
+                <img src = "images/dep_created.png" class = "subs-img">
+            </div>
+            <hr class = "hr">
+            <div class = "subs-message text-center">
+              <h5 class = "text-my-dark">Department Created Successfully</h5>    
+              <p class = "text-my-dark">You Can Manage Your Tools Member In One Place</p>    
+            </div>
+            
+                
+            
+        
+            <a href = "index.html" class="btn btn-info btn-block mt-7">Go To Departments</a>
+        </div>
+        <!-- /.order_summary -->
+    </div>
+    <!-- /.order_summary-container -->
+
+    
+    
+    
+    
+        <div class="order-summary-container5">
+        <!-- order_summary -->
+        <div class="order_summary ">
+             <button class="btn bg-transparent text-my-dark order_summary_close5">x</button> 
+            <h5 class="black54">Basic Detail</h5>
+            <div class = "side-tool-wrap">
+            <table class="table table-bordered text-my-dark ">
+                <tr class = "font12 black54">
+                    <td>Department Name</td>
+                    <td><strong>Human Resources</strong></td>
+                </tr>
+         
+    
+                <tr>
+                    <td class = "font12 black54">Select User</td>
+                    <td class = "font16b">
+                        <span class="order-user">alex@onetool.com</span>
+                        <button class="btn bg-transparent text-blue">+ Add User</button>
+                    </td>
+                </tr>
+
+            </table>
+            </div>
+            <h5 class="black54">Selected Tools</h5>
+            <div class = "side-tool-wrap">
+            <table class="table table-bordered text-my-dark ">
+                <tr class = "">
+                    <td class = "">
+                        <img src = "images/tool/upwave.png" class = "">
+                    </td>
+                    <td class = "">
+                        <img src = "images/tool/bookafy.png" class = "">
+                    </td>
+                </tr>
+                <tr class = "">
+                    <td class = "">
+                        <img src = "images/tool/outplay.png" class = "">
+                    </td>
+                    <td class = "">
+                        <img src = "images/tool/image 25.png" class = "">
+                    </td>
+                </tr>
+
+                <tr class = "">
+                    <td class = "">
+                        <img src = "images/tool/digisigner.png" class = "">
+                    </td>
+                    <td class = "">
+                        <img src = "images/tool/taiga.png" class = "">
+                    </td>
+                </tr>
+                <tr class = "">
+                    <td class = "">
+                        <img src = "images/tool/taskeo.png" class = "">
+                    </td>
+                    <td class = "">
+                        <img src = "images/tool/vectera.png" class = "">
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        
+            <div class = "side-tool-wrap2 mt-5 text-center">
+            <div class = "row">
+                <div class = "col-6 text-left"><h5 class="black54">Add New Tools</h5></div>
+                <div class = "col-6 text-right">
+                        <h6 class="  font16  pointer all-tools-menu">All Tools <i class="ml-2 fas fa-angle-down"></i></h6>
+                        <div class="tool-menu p-2 bg-white">
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class="fas fa-check mr-2 "></i> All Tools</button>
+                            </div>
+
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class=" mr-4 "></i> Meeting</button>
+                            </div>
+
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class="mr-4"></i> Marketing</button>
+                            </div>
+
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class="mr-4"></i> Accounting</button>
+                            </div>
+
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class=" mr-4 "></i> CRM</button>
+                            </div>
+
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class=" mr-4 "></i> Notes</button>
+                            </div>
+
+                            <div class="too-item">
+                                <button class="btn bg-transparent text-blue"> <i class=" mr-4 "></i> File Management</button>
+                            </div>
+
+                        </div>
+
+                </div>
+            </div>
+            
+            <table class="table table-bordered text-my-dark text-left">
+                <tr class = "">
+                    <td class = " border-b">
+                        <span class = "">
+                        <label class="container-4">
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>                        
+                        </span>
+                        <img src = "images/tool/upwave.png" class = "ml-5 mt-m14px">
+                    </td>
+                    <td class = "">
+                        <span class = "">
+                        <label class="container-4">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                        
+                        </span>
+
+                        <img src = "images/tool/bookafy.png" class = "ml-5 mt-m14px">
+                    </td>
+                </tr>
+                <tr class = "">
+                    <td class = "">
+                        <span class = "">
+                        <label class="container-4">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                        
+                        </span>
+
+                        <img src = "images/tool/outplay.png" class = "ml-5 mt-m14px">
+                    </td>
+                    <td class = "">
+                        <span class = "">
+                        <label class="container-4">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                        
+                        </span>
+
+                        <img src = "images/tool/image 25.png" class = "ml-5 mt-m14px">
+                    </td>
+                </tr>
+
+            </table>
+            <button class = "btn bg-transparent text-blue border-bottom-b p-0 mt-3">If You Are Looking For Different Tool?EXplore Now</button>
+            <button class = "btn btn-info btn-block  mt-4 order_summary_open6">Confirm Selection</button>
+        </div>
+
+            <button class="btn btn-info btn-block mt-10 crt_new_dep">Create New Department</button>
+        </div>
+        <!-- /.order_summary -->
+    </div>
+    <!-- /.order_summary-container -->
+
+
+
+    <div class="order-summary-container6 order_summary_close6">
+        <!-- order_summary -->
+        <div class="order_summary2 text-center">
+             <button class="btn bg-transparent text-my-dark order_summary_close6">x</button> 
+        
+            <div class = "subscription_image">
+                <img src = "images/tool_added.png" class = "subs-img">
+            </div>
+            <hr class = "hr">
+            <div class = "subs-message text-center">
+              <h5 class = "text-my-dark">New Tools Added Successfully</h5>    
+              <p class = "text-my-dark">Thanks For Subscribing New Tool</p>    
+            </div>
+            
+                
+            
+        
+            <a href = "index.html" class="btn btn-info btn-block mt-7">Go To Departments</a>
+        </div>
+        <!-- /.order_summary -->
+    </div>
+    <!-- /.order_summary-container -->
+
+
+
+    
+    
+    
+</body>
+
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap4.js"></script>
+<script src="js/popper.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="js/custom.js"></script>
+<!--<script src="js/chart.js"></script>-->
+</html>
